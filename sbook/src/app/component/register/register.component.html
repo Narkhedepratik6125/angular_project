@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-md-4 offset-md-4 col-sm-6 offset-sm-3">
+      <div class="card auth">
+        <div class="card-body auth-card">
+          <form (submit)="register(userData(email,password))">
+              <div class="form-group">
+                <label for="email">Email : </label>
+                <input type="text" name="email" class="form-control" placeholder="Enter Your Email" [(ngModel)]="userData.email">
+              </div>
+              <div class="form-group">
+                <label for="username">Username : </label>
+                <input type="text" name="username" class="form-control" placeholder="Enter Your Username" [(ngModel)]="userData.username">
+              </div>
+              <div class="form-group">
+                <label for="password">Password : </label>
+                <input type="password" name="password" class="form-control" placeholder="Enter Your Password" [(ngModel)]="userData.password">
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
